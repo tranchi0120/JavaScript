@@ -1,0 +1,95 @@
+.header {
+    padding: 12px;
+    margin: 10px;
+}
+
+.main {
+    position: fixed;
+    bottom: 20px;
+    transform: translateY(150%);
+    display: flex;
+    gap: 10px;
+    border: none;
+    width: 280px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(205, 233, 247);
+    box-shadow: 5px 5px 0px 0px rgb(170, 163, 163);
+    animation: load 3s forwards 1 ease-in;
+}
+
+.image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+@keyframes load {
+    20%,
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+.form {
+    background-color: red;
+    padding: 15px;
+}
+
+/* ---------- vi du ----------- */
+
+.container-btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.active-content {
+    display: block !important;
+    color: rgb(20, 27, 235);
+}
+
+.item-content {
+    display: none;
+}
+
+.group {
+    border-radius: 15px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: rgb(185, 185, 173);
+    padding: 45px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.item-btn {
+    width: 120px;
+    border: none;
+    background-color: white;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: red;
+}
+
+.active-btn {
+    background-color: rgb(7, 83, 182);
+    color: white;
+    pointer-events: none;
+}
