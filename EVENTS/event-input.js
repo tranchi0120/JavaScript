@@ -1,5 +1,5 @@
 const input = document.querySelector('.input');
-// -----------------------
+// ---------- Event Form  -------------
 // 1. keydown
 
 input.addEventListener('keydown', function (e) {
@@ -34,4 +34,12 @@ input.addEventListener('focus', function (e) {
 // 6.blur: khi đưa chuột ra ngoài <=> ngược lại với focus
 input.addEventListener('blur', function (e) {
   console.log('blur');
+});
+
+// 7. submit
+const form = document.querySelector('.form');
+form.addEventListener('submit', function (e) {
+  // this == e.target
+  e.preventDefault();
+  console.log(this.elements);
 });
