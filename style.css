@@ -1,0 +1,55 @@
+.box {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+.container {
+  max-width: 500px;
+  padding: 25px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
+  border-radius: 15px;
+  height: 100%;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  color: white !important;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(80, 142, 242);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(28, 110, 242);
+}
+.delete {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  background-color: red;
+}
+.delete:hover {
+  background-color: rgb(180, 8, 8);
+}
+input {
+  border: none;
+  background-color: rgb(247, 248, 248);
+  color: black;
+  padding: 15px;
+  outline: none;
+  border-radius: 15px;
+  margin-right: 25px;
+}

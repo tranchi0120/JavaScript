@@ -42,4 +42,6 @@ form.addEventListener('submit', function (e) {
   // this == e.target
   e.preventDefault();
   console.log(this.elements);
+  console.log(this.elements['username']);
+
 });

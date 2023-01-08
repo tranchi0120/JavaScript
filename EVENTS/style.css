@@ -5,9 +5,11 @@
   margin: 50px auto;
   width: max-content;
 }
+
 .tooltip {
   position: relative;
 }
+
 .tooltip-text {
   position: fixed;
   transform: translate(-50%);
@@ -19,7 +21,7 @@
 }
 
 .tooltip-text::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
