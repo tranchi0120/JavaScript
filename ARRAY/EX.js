@@ -149,6 +149,11 @@ const Arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3];
 const objectArr = new Set(Arr);
 console.log("objectArr:", objectArr);
 
+for (const item of objectArr) {
+    console.log("item:", item);
+}
+
+
 const newArray = Array.from(objectArr);
 console.log("newArray:", newArray);
 

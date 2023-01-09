@@ -1,7 +1,7 @@
 const student = {
-    name: 'tran chi',
+    name: "tran chi",
     age: 38,
-    country: 'DAK LAK',
+    country: "DAK LAK",
 };
 
 const KeyStudent = Object.keys(student); // => TẠO RA MỘT MẢNG MỚI CHỨA CÁC "KEY" CỦA OBJECT BAN ĐẦU
@@ -14,44 +14,40 @@ console.log(ValueStudent);
 const entrisStudent = Object.entries(student);
 console.log(entrisStudent);
 
-
-
-console.log('--------------------------------');
+console.log("--------------------------------");
 // phuowng thuc  assign()  : noi object
 const a = {
-    firstName: 'tran',
+    firstName: "tran",
 };
 const b = {
-    lastname: 'chi',
+    lastname: "chi",
 };
 const c = Object.assign(a, b);
 console.log(c);
 
 const d = { ...a, ...b };
-console.log('d:', d);
+console.log("d:", d);
 
-
-
-console.log('--------------------------------');
+console.log("--------------------------------");
 // phương thức seal(): có thể chỉnh sửa nhưng ko được thêm giá trị vào object
 const obj = {
-    name: "tran chi"
-}
+    name: "tran chi",
+};
 
-const newobj = Object.seal(obj)
-console.log("new name:", obj.name = "kim huyen")
-console.log("add age:", obj.age = 18) // khong them duoc vao object "obj"
-console.log(obj)
+const newobj = Object.seal(obj);
+console.log("new name:", (obj.name = "kim huyen"));
+console.log("add age:", (obj.age = 18)); // khong them duoc vao object "obj"
+console.log(obj);
 
 // --------------------------------------------------
-console.log('--------------------------------');
+console.log("--------------------------------");
 // clone 1 object phức tạp
 const arr3 = {
-    name: 'tran chi',
+    name: "tran chi",
     newAge: {
         age: 118,
         male: {
-            mal: 'string',
+            mal: "string",
         },
         chi: {
             hoten: [1, 2, 3, 4],
@@ -62,4 +58,28 @@ const arr3 = {
 console.log(arr3);
 
 const arr4 = JSON.parse(JSON.stringify(arr3));
-console.log('arr4', arr4);
+console.log("arr4", arr4);
+
+// ------------------------ Object contructor and Object Prototype   ----------------------------------------
+console.log("-------------  Object contructor and Object Prototype  -------------------");
+function User(firstName, lastName, email) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.email = email;
+    this.getName = function () {
+        return `${this.firstName} ${this.lastName}`;
+    };
+}
+
+const author = new User("Tran", "Chi", "tranchi@gmail.com");
+author.phone = "0339599523";
+
+User.prototype.classname = "F8"
+User.prototype.getClassName = function () {
+    return this.classname
+}
+
+const user = new User("Kim", "Huyen", "kimhuyen@gmail.com");
+
+console.log(author.classname); // F8
+console.log(user.getClassName()); // F8

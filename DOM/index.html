@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body> DOM <p class="content"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellat nulla tempora
-        animi nihil accusantium, atque quos Laborum repellat nulla tempora animi nihil accusantium, atque quos Laborum
-        repellat nulla tempora animi nihil accusantium, atque quos Laborum repellat nulla tempora animi nihil
-        accusantium, atque quos Laborum repellat nulla tempora animi nihil accusantium, atque quosLaborum repellat nulla
-        tempora animi nihil accusantium, atque quosLaborum repellat nulla tempora animi nihil accusantium, atque
-        quosLaborum repellat nulla tempora animi nihil accusantium, atque quosLaborum repellat nulla tempora animi nihil
-        accusantium, atque quosLaborum repellat nulla tempora animi nihil accusantium, atque quos, earum doloribus
-        quaerat aspernatur rem impedit dicta ut beatae, quidem vel et non. </p>
+  <body>
+    DOM
+    <p class="content">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellat
+      nulla tempora animi nihil accusantium, atque quos Laborum repellat nulla
+      tempora animi nihil accusantium, atque quos Laborum repellat nulla tempora
+      animi nihil accusantium, atque quos Laborum repellat nulla tempora animi
+      nihil accusantium, atque quos Laborum repellat nulla tempora animi nihil
+      accusantium, atque quosLaborum repellat nulla tempora animi nihil
+      accusantium, atque quosLaborum repellat nulla tempora animi nihil
+      accusantium, atque quosLaborum repellat nulla tempora animi nihil
+      accusantium, atque quosLaborum repellat nulla tempora animi nihil
+      accusantium, atque quosLaborum repellat nulla tempora animi nihil
+      accusantium, atque quos, earum doloribus quaerat aspernatur rem impedit
+      dicta ut beatae, quidem vel et non.
+    </p>
     <section>
-        <div class="header">
-            <h1 class="title container des">Hello word</h1>
-            <p class="content"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellat nulla tempora
-                animi nihil accusantium, atque quos, earum doloribus quaerat aspernatur rem impedit dicta ut beatae,
-                quidem vel et non. </p>
-        </div>
+      <div class="header">
+        <h1 class="title container des">Hello word</h1>
+        <p class="content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
+          repellat nulla tempora animi nihil accusantium, atque quos, earum
+          doloribus quaerat aspernatur rem impedit dicta ut beatae, quidem vel
+          et non.
+        </p>
+      </div>
     </section>
     <ul>
-        <li class="item">Hello</li>
-        <li class="item">HI</li>
-        <li class="item">Xin chao</li>
-        <li class="item">Tram Chi</li>
-        <li class="item">Kim Huyen</li>
+      <li class="item">Hello</li>
+      <li class="item">HI</li>
+      <li class="item">Xin chao</li>
+      <li class="item">Tram Chi</li>
+      <li class="item">Kim Huyen</li>
     </ul>
     <div class="container-btn">
-        <div class="group">
-            <button class="item-btn active-btn" data-tab="1">left</button>
-            <button class="item-btn" data-tab="2">center</button>
-            <button class="item-btn" data-tab="3">right</button>
+      <div class="group">
+        <button class="item-btn active-btn" data-tab="1">left</button>
+        <button class="item-btn" data-tab="2">center</button>
+        <button class="item-btn" data-tab="3">right</button>
+      </div>
+      <div class="wrapper">
+        <div class="item-content active-content" data-tab="1">
+          <span>left</span>
         </div>
-        <div class="wrapper">
-            <div class="item-content active-content" data-tab="1">
-                <span>left</span>
-            </div>
-            <div class="item-content" data-tab="2">
-                <span>center</span>
-            </div>
-            <div class="item-content" data-tab="3">
-                <span>right</span>
-            </div>
+        <div class="item-content" data-tab="2">
+          <span>center</span>
         </div>
+        <div class="item-content" data-tab="3">
+          <span>right</span>
+        </div>
+      </div>
     </div>
     <div class="form">
-        <button class="btn">click me</button>
+      <button class="btn">click me</button>
     </div>
     <!-- event -->
-    <!-- <div class="main">
-        <img class="image"
-            src="https://images.unsplash.com/photo-1671642543979-ecbc42fa532f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
-            alt="" />
-        <div class="box">
-            <div class="title">Hello word</div>
-            <p class="content">chao mung nam moi 2023</p>
-        </div>
-    </div> -->
+    <div class="main">
+      <img
+        class="image"
+        src="https://images.unsplash.com/photo-1671642543979-ecbc42fa532f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80"
+        alt=""
+      />
+      <div class="box">
+        <div class="title">Hello word</div>
+        <p class="content">chao mung nam moi 2023</p>
+      </div>
+    </div>
+
+    <!-- this -->
+    <button class="button">button click me! in this</button>
+
     <!-- <script src="./main.js"></script> -->
     <!-- --------------------- -->
-    <script src="./event.js"></script>
+    <!-- <script src="./event.js"></script> -->
     <!-- <script src="./this.js"></script> -->
-</body>
-
+    <script src="./bind_method.js"></script>
+  </body>
 </html>
